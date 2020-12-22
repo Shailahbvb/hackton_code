@@ -1,30 +1,16 @@
 package com.training.Assessment;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-import java.util.stream.Stream;
-
-public class Question26{
-
+public class Question32 {
 	
+	static int NA =-1; 
 
 	public static void main(String[] args) {
-		 int a[] = {1,2,4,6,9,10 ,-1,-1, -1, -1}; 
+		 int a[] = {1,2,4,6,9,10 , NA, NA, NA, NA}; 
 	        int n = 6; 
 	        int size_a = 10; 
 	        int b[] = {3, 5,7,8 }; 
 	        int m = 4; 
-	       
-	        System.out.println ( "Array 1: " ) ; 
-	        printArray(a, size_a); 
-	        System.out.println ( "\nArray 2 : " ) ; 
-	        printArray(b, 4); 
-	        sortedMerge(a, b, n, m);
-	        System.out.println ( "\nAfter merging 2 sorted arrays : " ) ; 
+	        sortedMerge(a, b, n, m); 
 	        printArray(a, size_a); 
 
 	}
@@ -59,7 +45,7 @@ public class Question26{
     
     static void printArray(int arr[], int n)  
     { 
-       
+        System.out.println ( "Array A after merging B in sorted order : " ) ; 
         for (int i = 0; i < n; i++) 
             System.out.print(arr[i] +" "); 
     } 

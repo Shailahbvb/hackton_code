@@ -17,10 +17,6 @@ public class Question31 {
 			FileReader oFR = new FileReader(sPath);
 			BufferedReader oBR = new BufferedReader(oFR);
 			
-			
-			
-			
-			
 		        Stack<String> lines = new Stack<String>();
 		        String line = oBR.readLine();
 		        while(line != null) {
@@ -43,21 +39,12 @@ public class Question31 {
 		        }
 			
 		        oBW.close();
-			
-				
-		
-			
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 	
-	
-
-	
-	
-	
-		
 	}
 }
